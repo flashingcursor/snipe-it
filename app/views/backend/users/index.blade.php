@@ -81,12 +81,22 @@ User Management ::
 -->
 {{
 	Datatable::table()
+		->addColumn('lastname')
 		->addColumn(Lang::get('name'))
 		->addColumn(Lang::get('email'))
 		->addColumn('Assets')
 		->addColumn('Licenses')
 		->addColumn(Lang::get('activated'))
 		->setUrl(route('api.users'))
+		->setOptions('aoColumnDefs',array(
+		    array( 'sWidth' => '15%', 'aTargets' => array(1)),
+		    array( 'sWidth' => '5%', 'aTargets' => array(3, 4, 5)),
+		    array( 'sWidth' => '30%', 'aTargets' => array(2)),
+		    array( 'sClass' => 'center', 'aTargets' => array(3, 4, 5)),
+		    array( 'bVisible' => false, 'aTargets' => array(0)),
+		    array( 'iDataSort' => 0, 'aTargets' => array(1))
+		    )
+		)
 		->render()
 }}
 

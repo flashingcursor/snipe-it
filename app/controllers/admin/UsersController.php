@@ -454,9 +454,10 @@ class UsersController extends AdminController {
 	public function getDatatable()
     {
     	return Datatable::collection(User::all())
+    	->showColumns('last_name')
 		->addColumn('name',function($model)
 	        {
-				$name = HTML::image($model->gravatar(), $model->first_name, array('class'=>'img-circle avatar hidden-phone', 'style'=>'max-width: 45px'));
+				$name = HTML::image($model->gravatar(), $model->first_name, array('class'=>'img-circle avatar hidden-phone', 'style'=>'max-width: 45px; margin-right: 10px;'));
 	        	$name .= HTML::link(URL::action('Controllers\Admin\UsersController@getView', $model->id), $model->first_name . ' ' . $model->last_name, array('class' => 'name'));
 	            return $name;
 	        }

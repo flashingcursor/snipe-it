@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "2ff29b285767430e11356a6316d24a84",
+    "hash": "dd6e9f2f81399250027b2c59823594ce",
     "packages": [
         {
             "name": "barryvdh/laravel-debugbar",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/barryvdh/laravel-debugbar.git",
-                "reference": "2c9522a1dcf6e2a5fe8649b093f29ba0e01b2406"
+                "reference": "710ba0b11b05d6c8fbeb3780c480ba178bbd8fcd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/2c9522a1dcf6e2a5fe8649b093f29ba0e01b2406",
-                "reference": "2c9522a1dcf6e2a5fe8649b093f29ba0e01b2406",
+                "url": "https://api.github.com/repos/barryvdh/laravel-debugbar/zipball/710ba0b11b05d6c8fbeb3780c480ba178bbd8fcd",
+                "reference": "710ba0b11b05d6c8fbeb3780c480ba178bbd8fcd",
                 "shasum": ""
             },
             "require": {
@@ -48,7 +48,7 @@
                 "profiler",
                 "webprofiler"
             ],
-            "time": "2013-11-29 09:07:35"
+            "time": "2013-12-02 13:48:03"
         },
         {
             "name": "cartalyst/sentry",
@@ -156,12 +156,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Chumper/Datatable.git",
-                "reference": "8e8e29847f42e051d7f4dfb42ac7e01f8a23310b"
+                "reference": "4504bcd34c2ff1a950c9c15da7f572f2cef3c915"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Chumper/Datatable/zipball/8e8e29847f42e051d7f4dfb42ac7e01f8a23310b",
-                "reference": "8e8e29847f42e051d7f4dfb42ac7e01f8a23310b",
+                "url": "https://api.github.com/repos/Chumper/Datatable/zipball/4504bcd34c2ff1a950c9c15da7f572f2cef3c915",
+                "reference": "4504bcd34c2ff1a950c9c15da7f572f2cef3c915",
                 "shasum": ""
             },
             "require": {
@@ -200,7 +200,7 @@
                 "jquery",
                 "laravel"
             ],
-            "time": "2013-11-27 00:33:49"
+            "time": "2013-12-02 21:23:14"
         },
         {
             "name": "classpreloader/classpreloader",
@@ -873,12 +873,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "733cf07800756a3d57a2c912c4d44f5ddf0457b6"
+                "reference": "1973197d53c9daaf65c54c4c872669e787a408d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/733cf07800756a3d57a2c912c4d44f5ddf0457b6",
-                "reference": "733cf07800756a3d57a2c912c4d44f5ddf0457b6",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/1973197d53c9daaf65c54c4c872669e787a408d3",
+                "reference": "1973197d53c9daaf65c54c4c872669e787a408d3",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +978,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2013-11-27 15:45:20"
+            "time": "2013-12-03 02:09:00"
         },
         {
             "name": "maximebf/debugbar",
@@ -1036,12 +1036,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "6f5b3d2a9c63a857d40d200f1bb9f62991c07bf8"
+                "reference": "5ad421d6a1d5d7066a45b617e5164d309c4e2852"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/6f5b3d2a9c63a857d40d200f1bb9f62991c07bf8",
-                "reference": "6f5b3d2a9c63a857d40d200f1bb9f62991c07bf8",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5ad421d6a1d5d7066a45b617e5164d309c4e2852",
+                "reference": "5ad421d6a1d5d7066a45b617e5164d309c4e2852",
                 "shasum": ""
             },
             "require": {
@@ -1095,7 +1095,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-11-25 13:58:14"
+            "time": "2013-12-02 09:38:32"
         },
         {
             "name": "nesbot/carbon",
@@ -1245,12 +1245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/nrk/predis.git",
-                "reference": "32aff28ef5721763e8a6988d3e3f17d0570c0f1c"
+                "reference": "381023ad8f019eb4859550538e4affdb5bb9a68b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/32aff28ef5721763e8a6988d3e3f17d0570c0f1c",
-                "reference": "32aff28ef5721763e8a6988d3e3f17d0570c0f1c",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/381023ad8f019eb4859550538e4affdb5bb9a68b",
+                "reference": "381023ad8f019eb4859550538e4affdb5bb9a68b",
                 "shasum": ""
             },
             "require": {
@@ -1284,7 +1284,7 @@
                 "predis",
                 "redis"
             ],
-            "time": "2013-11-30 13:58:00"
+            "time": "2013-12-02 10:44:40"
         },
         {
             "name": "psr/log",
@@ -2083,12 +2083,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "8dc533354fac0afe1e871810141b1cbbe63c4092"
+                "reference": "4bacffdd738e89a094fb352f0e26a414f67122b6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/8dc533354fac0afe1e871810141b1cbbe63c4092",
-                "reference": "8dc533354fac0afe1e871810141b1cbbe63c4092",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/4bacffdd738e89a094fb352f0e26a414f67122b6",
+                "reference": "4bacffdd738e89a094fb352f0e26a414f67122b6",
                 "shasum": ""
             },
             "require": {
@@ -2138,7 +2138,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-26 23:10:30"
+            "time": "2013-12-01 21:49:24"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -2329,12 +2329,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "2d80d4a45d350dc8b5c49c0796687ec8e3b0517c"
+                "reference": "f2b2becadcfd57a896f8ec3ad172bec434335436"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/2d80d4a45d350dc8b5c49c0796687ec8e3b0517c",
-                "reference": "2d80d4a45d350dc8b5c49c0796687ec8e3b0517c",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/f2b2becadcfd57a896f8ec3ad172bec434335436",
+                "reference": "f2b2becadcfd57a896f8ec3ad172bec434335436",
                 "shasum": ""
             },
             "require": {
@@ -2398,7 +2398,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-11-28 05:38:34"
+            "time": "2013-12-01 18:59:19"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
