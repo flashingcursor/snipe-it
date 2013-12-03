@@ -32,7 +32,7 @@ User Management ::
 <div class="row form-wrapper">
 
 @if ($users->getTotal() > 0)
-<!-- <div class="row-fluid table users-list">
+<div class="row-fluid table users-list">
 <table id="example">
 	<thead>
 		<tr role="row">
@@ -78,8 +78,8 @@ User Management ::
 	</tbody>
 </table>
 </div>
--->
-{{
+
+<!-- {{
 	Datatable::table()
 		->addColumn('lastname')
 		->addColumn(Lang::get('name'))
@@ -98,7 +98,7 @@ User Management ::
 		    )
 		)
 		->render()
-}}
+}} -->
 
 @else
 

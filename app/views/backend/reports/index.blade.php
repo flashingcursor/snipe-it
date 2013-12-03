@@ -19,7 +19,7 @@ Depreciation Report
 					<span class="caret"></span>
 				</button>
 				<ul class="dropdown-menu">
-					<li><a href="{{ route('reports/export') }}">Download as CSV</a></li>
+					<li><a href="#">Download as CSV</a></li>
 					<li><a href="#">Download as PDF</a></li>
 				</ul>
 			</div>
@@ -49,7 +49,7 @@ Depreciation Report
 		@foreach ($assets as $asset)
 		<tr>
 			<td>{{ $asset->asset_tag }}</td>
-			<td>{{ $asset->name }}</td>
+			<td>{{ $asset->model->name }}</td>
 			<td>{{ $asset->serial }}</td>
 			<td>
 			@if ($asset->assigned_to != 0)
@@ -66,9 +66,17 @@ Depreciation Report
 			@endif
 			</td>
 			<td>{{ $asset->purchase_date }}</td>
+
+			@if ($asset->purchase_cost > 0)
 			<td class="align-right">${{ number_format($asset->purchase_cost) }}</td>
 			<td class="align-right">${{ number_format($asset->depreciate()) }}</td>
 			<td class="align-right">-${{ number_format(($asset->purchase_cost - $asset->depreciate())) }}</td>
+			@else
+			<td></td>
+			<td></td>
+			<td></td>
+			@endif
+
 
 		</tr>
 		@endforeach

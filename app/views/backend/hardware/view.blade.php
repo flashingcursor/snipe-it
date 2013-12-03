@@ -30,7 +30,10 @@ View Asset {{ $asset->asset_tag }} ::
 			</ul>
 		</div>
 		<h3>
-		<h3 class="name">History for {{ $asset->asset_tag }} ({{ $asset->name }})
+		<h3 class="name">History for {{ $asset->asset_tag }}
+		@if ($asset->name)
+		({{ $asset->name }})
+		@endif
 	</h3>
 	</div>
 </div>
@@ -70,7 +73,6 @@ View Asset {{ $asset->asset_tag }} ::
 			<div class="col-md-6"><strong>Fully Depreciated: </strong>{{ $asset->months_until_depreciated()->m }} months,
 			{{ $asset->months_until_depreciated()->y }} years</div>
 		@endif
-
 
 	</div>
 

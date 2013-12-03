@@ -145,13 +145,12 @@ class AssetsController extends AdminController {
 	public function getCreate()
 	{
 		// Grab the dropdown list of models
-		$model_list = array('' => '') + Model::lists('name', 'id');
-		$depreciation_list = array('' => '') + Depreciation::lists('name', 'id');
+		$model_list = array('' => '') + Model::orderBy('name', 'asc')->lists('name', 'id');
 
 		// Grab the dropdown list of status
-		$statuslabel_list = array('' => 'Pending') + array('1' => 'Ready to Deploy') + Statuslabel::lists('name', 'id');
+		$statuslabel_list = array('' => 'Pending') + array('0' => 'Ready to Deploy') + Statuslabel::orderBy('name', 'asc')->lists('name', 'id');
 
-		return View::make('backend/hardware/edit')->with('model_list',$model_list)->with('statuslabel_list',$statuslabel_list)->with('depreciation_list',$depreciation_list)->with('asset',new Asset);
+		return View::make('backend/hardware/edit')->with('model_list',$model_list)->with('statuslabel_list',$statuslabel_list)->with('asset',new Asset);
 
 	}
 
@@ -248,15 +247,12 @@ class AssetsController extends AdminController {
 		}
 
 		// Grab the dropdown list of models
-		$model_list = array('' => '') + Model::lists('name', 'id');
+		$model_list = array('' => '') + Model::orderBy('name', 'asc')->lists('name', 'id');
 
 		// Grab the dropdown list of status
-		$statuslabel_list = array('' => 'Pending') + array('0' => 'Ready to Deploy') + Statuslabel::lists('name', 'id');
+		$statuslabel_list = array('' => 'Pending') + array('0' => 'Ready to Deploy') + Statuslabel::orderBy('name', 'asc')->lists('name', 'id');
 
-		// get depreciation list
-		$depreciation_list = array('' => '') + Depreciation::lists('name', 'id');
-
-		return View::make('backend/hardware/edit', compact('asset'))->with('model_list',$model_list)->with('depreciation_list',$depreciation_list)->with('statuslabel_list',$statuslabel_list);
+		return View::make('backend/hardware/edit', compact('asset'))->with('model_list',$model_list)->with('statuslabel_list',$statuslabel_list);
 	}
 
 
@@ -278,10 +274,10 @@ class AssetsController extends AdminController {
 
 		// Declare the rules for the form validation
 		$rules = array(
-		'name'   => 'required|min:3',
+		'name'   => 'alpha_space|min:3',
 		'asset_tag'   => 'required|alpha_space|min:3',
 		'model_id'   => 'required',
-		'serial'   => 'required|alpha_space|min:3',
+		'serial'   => 'alpha_space|min:3',
 		'warranty_months'   => 'integer',
 		'notes'   => 'alpha_space',
     	);
@@ -386,7 +382,7 @@ class AssetsController extends AdminController {
 		}
 
 		// Get the dropdown of users and then pass it to the checkout view
-		$users_list = array('' => 'Select a User') + DB::table('users')->select(DB::raw('concat(first_name," ",last_name) as full_name, id'))->whereNull('deleted_at')->lists('full_name', 'id');
+		$users_list = array('' => 'Select a User') + DB::table('users')->select(DB::raw('concat(first_name," ",last_name) as full_name, id'))->whereNull('deleted_at')->orderBy('last_name', 'asc')->orderBy('first_name', 'asc')->lists('full_name', 'id');
 
 		//print_r($users);
 		return View::make('backend/hardware/checkout', compact('asset'))->with('users_list',$users_list);
